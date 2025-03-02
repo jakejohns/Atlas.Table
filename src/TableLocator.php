@@ -33,7 +33,7 @@ class TableLocator
     public function __construct(
         ConnectionLocator $connectionLocator,
         TableQueryFactory $tableQueryFactory,
-        callable $factory = null
+        ?callable $factory = null
     ) {
         $this->connectionLocator = $connectionLocator;
         $this->tableQueryFactory = $tableQueryFactory;
